@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- DEMO: remove noindex when site goes live -->
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Smile Barbershop | Fades, Line-Ups &amp; Beard Work in Winter Haven, FL</title>
+<meta name="description" content="Smile Barbershop on US-92 in Winter Haven, FL. Fades, line-ups, tapers, beard trims and family cuts. 4.9 stars across 37 Google reviews. Call (863) 303-2460.">
+<meta name="theme-color" content="#0A0A0C">
+
+<meta property="og:type" content="business.business">
+<meta property="og:site_name" content="Smile Barbershop">
+<meta property="og:title" content="Smile Barbershop — Winter Haven, FL">
+<meta property="og:description" content="Fades, line-ups, tapers, beard trims and family cuts on US-92. 4.9 stars across 37 Google reviews. Call (863) 303-2460.">
+<meta property="og:url" content="https://wilsoninnovations.net/smile-barbershop/">
+<meta property="og:image" content="https://wilsoninnovations.net/smile-barbershop/img/storefront.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="Smile Barbershop storefront on US-92 in Winter Haven, Florida">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Smile Barbershop — Winter Haven, FL">
+<meta name="twitter:description" content="Fades, line-ups, tapers, beard trims and family cuts on US-92. 4.9 stars across 37 Google reviews.">
+<meta name="twitter:image" content="https://wilsoninnovations.net/smile-barbershop/img/storefront.jpg">
+<link rel="canonical" href="https://wilsoninnovations.net/smile-barbershop/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0A0C'/%3E%3Cpath d='M16 28a16 16 0 0 0 32 0' fill='none' stroke='%23FFD028' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<style>
+:root{
+  --void:#0A0A0C;
+  --char:#131316;
+  --char2:#1A1A1F;
+  --panel:rgba(255,255,255,.045);
+  --yellow:#FFD028;
+  --yellow-lt:#FFE884;
+  --yellow-dp:#F5A800;
+  --white:#FFFFFF;
+  --ink:#F0EEE9;
+  --muted:#A6A49E;
+  --faint:#74726D;
+  --line:rgba(255,255,255,.09);
+  --line-soft:rgba(255,255,255,.055);
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --grad-y:linear-gradient(100deg,#FFE884 0%,#FFD028 46%,#F5A800 100%);
+  --shadow:0 1px 2px rgba(0,0,0,.55),0 18px 44px -18px rgba(0,0,0,.85);
+  --glow:0 12px 40px -14px rgba(255,208,40,.42);
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip;max-width:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--void);color:var(--ink);
+  font-family:'Mulish',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;position:relative;
+}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3,h4{font-family:'Unbounded','Mulish',system-ui,sans-serif;margin:0;line-height:1.08;letter-spacing:-.028em;font-weight:700}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--yellow);outline-offset:3px;border-radius:6px}
+
+/* ---------- aurora + grain ---------- */
+.aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(94px);opacity:.30}
+.b1{width:66vw;height:66vw;max-width:820px;max-height:820px;left:-16vw;top:-14vw;
+  background:radial-gradient(circle at 40% 40%,rgba(255,208,40,.62),rgba(255,208,40,0) 68%)}
+.b2{width:58vw;height:58vw;max-width:720px;max-height:720px;right:-14vw;top:24vh;
+  background:radial-gradient(circle at 50% 50%,rgba(245,168,0,.50),rgba(245,168,0,0) 68%)}
+.b3{width:62vw;height:62vw;max-width:760px;max-height:760px;left:26vw;bottom:-22vh;
+  background:radial-gradient(circle at 50% 50%,rgba(126,86,220,.40),rgba(126,86,220,0) 68%);opacity:.24}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.30;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E")}
+@media (min-width:700px) and (prefers-reduced-motion:no-preference){
+  .b1{animation:drift1 34s var(--ease) infinite alternate}
+  .b2{animation:drift2 41s var(--ease) infinite alternate}
+  .b3{animation:drift3 47s var(--ease) infinite alternate}
+}
+@keyframes drift1{to{transform:translate3d(9vw,7vh,0) scale(1.14)}}
+@keyframes drift2{to{transform:translate3d(-8vw,-9vh,0) scale(1.1)}}
+@keyframes drift3{to{transform:translate3d(6vw,-6vh,0) scale(1.16)}}
+@media (max-width:699px){.blob{filter:blur(70px);opacity:.22}.b3{display:none}}
+
+.page{position:relative;z-index:2}
+.wrap{width:100%;max-width:1180px;margin-left:auto;margin-right:auto;padding-left:18px;padding-right:18px}
+@media (min-width:820px){.wrap{padding-left:34px;padding-right:34px}}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(10,10,12,.80);
+  -webkit-backdrop-filter:saturate(150%) blur(14px);backdrop-filter:saturate(150%) blur(14px);
+  border-bottom:1px solid var(--line-soft)}
+.hdr-in{display:flex;align-items:center;gap:12px;padding-top:11px;padding-bottom:11px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0;flex:1 1 auto}
+.mark{flex:0 0 auto;width:40px;height:40px;border-radius:12px;background:var(--char2);
+  border:1px solid rgba(255,208,40,.30);display:grid;place-items:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
+.mark svg{width:23px;height:23px;display:block}
+.brand-txt{min-width:0}
+.brand-name{display:block;font-family:'Unbounded',sans-serif;font-weight:700;font-size:.99rem;
+  line-height:1.16;letter-spacing:-.02em;color:var(--white);overflow-wrap:break-word}
+.brand-sub{display:block;font-size:.6rem;letter-spacing:.19em;text-transform:uppercase;
+  color:var(--faint);font-weight:700;margin-top:3px;white-space:nowrap}
+.hdr-nav{display:none}
+.hdr-cta{margin-left:auto;flex:0 0 auto;display:inline-flex;align-items:center;gap:9px;
+  min-height:44px;padding:0 15px;border-radius:999px;background:var(--grad-y);color:#161200;
+  font-family:'Mulish',sans-serif;font-weight:800;font-size:.9rem;text-decoration:none;
+  box-shadow:var(--glow);transition:transform .22s var(--ease),box-shadow .22s var(--ease)}
+.hdr-cta:hover{transform:translateY(-1px);box-shadow:0 16px 44px -14px rgba(255,208,40,.6)}
+.hdr-cta svg{width:18px;height:18px;flex:0 0 auto}
+.hdr-cta .lbl{display:none}
+@media (min-width:601px){.hdr-cta .lbl{display:inline}.hdr-cta{padding:0 20px}}
+@media (min-width:900px){
+  .hdr-nav{display:flex;gap:26px;margin-left:30px}
+  .hdr-nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.9rem;
+    transition:color .2s var(--ease)}
+  .hdr-nav a:hover{color:var(--yellow)}
+  .brand-name{font-size:1.08rem}
+  .mark{width:44px;height:44px}
+  .mark svg{width:26px;height:26px}
+}
+
+/* ---------- shared section furniture ---------- */
+section{position:relative}
+.sec{padding-top:76px;padding-bottom:76px}
+@media (min-width:820px){.sec{padding-top:104px;padding-bottom:104px}}
+.band{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);
+  background:linear-gradient(180deg,rgba(255,255,255,.028),rgba(255,255,255,0))}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'Mulish',sans-serif;
+  font-size:.7rem;font-weight:800;letter-spacing:.21em;text-transform:uppercase;color:var(--yellow);margin-bottom:16px}
+.eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--grad-y);flex:0 0 auto}
+h2{font-size:clamp(1.85rem,5.1vw,3rem);font-weight:700;text-wrap:balance;max-width:19ch}
+.lede{color:var(--muted);font-size:1.03rem;max-width:60ch;margin-top:16px}
+.grad{background:var(--grad-y);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ---------- hero ---------- */
+.hero{padding-top:24px;padding-bottom:54px;min-height:clamp(540px,84vh,820px);display:flex;align-items:center}
+@media (min-width:820px){.hero{padding-top:44px;padding-bottom:78px}}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:34px;align-items:center;width:100%}
+@media (min-width:960px){.hero-grid{grid-template-columns:1.06fr .94fr;gap:52px}}
+.hero-copy{min-width:0}
+.h1{font-family:'Unbounded',sans-serif;font-weight:800;
+  font-size:clamp(2.05rem,8.1vw,3.85rem);line-height:1.04;letter-spacing:-.042em;
+  max-width:14ch;text-wrap:balance;color:var(--white)}
+.hero-sub{color:var(--muted);font-size:.995rem;line-height:1.58;margin-top:16px;max-width:52ch}
+@media (min-width:820px){.hero-sub{font-size:1.1rem;line-height:1.62;margin-top:20px}}
+.btns{display:flex;flex-wrap:wrap;gap:11px;margin-top:22px}
+@media (max-width:479px){.btns .btn{flex:1 1 100%}}
+@media (min-width:820px){.btns{gap:12px;margin-top:28px}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;
+  padding:0 24px;border-radius:999px;text-decoration:none;font-weight:800;font-size:1rem;
+  border:1px solid transparent;transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .22s var(--ease),border-color .22s var(--ease)}
+.btn svg{width:19px;height:19px;flex:0 0 auto}
+.btn-p{background:var(--grad-y);color:#161200;box-shadow:var(--glow);position:relative;overflow:hidden}
+.btn-p::after{content:"";position:absolute;inset:0;transform:translateX(-120%);
+  background:linear-gradient(100deg,transparent 20%,rgba(255,255,255,.55) 50%,transparent 80%)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 18px 50px -14px rgba(255,208,40,.62)}
+@media (prefers-reduced-motion:no-preference){.btn-p:hover::after{animation:sheen .85s var(--ease)}}
+@keyframes sheen{to{transform:translateX(120%)}}
+.btn-g{background:rgba(255,255,255,.045);color:var(--ink);border-color:var(--line)}
+.btn-g:hover{background:rgba(255,255,255,.085);border-color:rgba(255,208,40,.4);transform:translateY(-2px)}
+
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+@media (min-width:820px){.chips{margin-top:30px}}
+.chip{flex:1 1 128px;min-width:0;padding:14px 15px;border-radius:15px;
+  background:var(--panel);border:1px solid var(--line);
+  -webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px)}
+.chip b{display:block;font-family:'Unbounded',sans-serif;font-weight:700;font-size:1.1rem;
+  letter-spacing:-.03em;color:var(--white);line-height:1.2}
+.chip b .star{color:var(--yellow);font-size:.85em}
+.chip span{display:block;font-size:.665rem;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--faint);font-weight:800;margin-top:6px;line-height:1.45}
+
+.hero-art{position:relative;min-width:0}
+.frame{position:relative;border-radius:24px;padding:1.5px;background:linear-gradient(150deg,rgba(255,208,40,.62),rgba(255,255,255,.10) 42%,rgba(255,208,40,.24));
+  box-shadow:0 30px 70px -26px rgba(0,0,0,.95)}
+.frame>img{border-radius:23px;width:100%;aspect-ratio:3/4;object-fit:cover}
+@media (min-width:960px){.frame>img{aspect-ratio:4/5}}
+.art-tag{position:absolute;left:14px;bottom:14px;right:14px;display:flex;align-items:center;gap:10px;
+  padding:11px 14px;border-radius:14px;background:rgba(10,10,12,.78);border:1px solid var(--line);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.art-tag svg{width:17px;height:17px;flex:0 0 auto;color:var(--yellow)}
+.art-tag span{font-size:.815rem;font-weight:700;color:var(--ink);line-height:1.35;min-width:0}
+
+/* ---------- ticker ---------- */
+.ticker{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);
+  background:rgba(255,255,255,.022);overflow:hidden;padding-top:14px;padding-bottom:14px}
+.tick-row{display:flex;width:max-content;gap:0}
+.tick-row ul{display:flex;gap:0;align-items:center}
+.tick-row li{display:flex;align-items:center;gap:22px;padding-left:11px;padding-right:11px;
+  font-family:'Unbounded',sans-serif;font-weight:600;font-size:.76rem;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.tick-row li::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--yellow);opacity:.85}
+@media (prefers-reduced-motion:no-preference){.tick-row{animation:tick 34s linear infinite}}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- cards ---------- */
+.grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:38px}
+@media (min-width:640px){.grid{grid-template-columns:1fr 1fr;gap:16px}}
+@media (min-width:1000px){.grid-4{grid-template-columns:repeat(4,1fr)}}
+.card{min-width:0;padding:24px 22px 26px;border-radius:19px;background:var(--panel);
+  border:1px solid var(--line);box-shadow:var(--shadow);
+  transition:transform .3s var(--ease),border-color .3s var(--ease),background .3s var(--ease)}
+.card:hover{transform:translateY(-4px);border-color:rgba(255,208,40,.34);background:rgba(255,255,255,.065)}
+.ic{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;margin-bottom:16px;
+  background:linear-gradient(150deg,rgba(255,208,40,.20),rgba(255,208,40,.05));
+  border:1px solid rgba(255,208,40,.28)}
+.ic svg{width:21px;height:21px;color:var(--yellow)}
+.card h3{font-size:1.09rem;font-weight:700;color:var(--white);letter-spacing:-.024em;line-height:1.28}
+.card p{color:var(--muted);font-size:.945rem;margin-top:10px}
+
+/* ---------- split feature ---------- */
+.split{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+@media (min-width:960px){.split{grid-template-columns:1fr 1fr;gap:56px}.split.rev .split-art{order:-1}}
+.split-copy{min-width:0}
+.split-art{min-width:0}
+.split-art img{border-radius:20px;width:100%;aspect-ratio:4/5;object-fit:cover;
+  border:1px solid var(--line);box-shadow:0 30px 66px -28px rgba(0,0,0,.9)}
+.pts{margin-top:24px;display:grid;gap:13px}
+.pt{display:flex;gap:13px;align-items:flex-start;min-width:0}
+.pt-d{flex:0 0 auto;width:22px;height:22px;border-radius:7px;margin-top:2px;display:grid;place-items:center;
+  background:linear-gradient(150deg,rgba(255,208,40,.24),rgba(255,208,40,.06));border:1px solid rgba(255,208,40,.3)}
+.pt-d svg{width:12px;height:12px;color:var(--yellow)}
+.pt p{color:var(--muted);font-size:.965rem;min-width:0}
+.pt b{color:var(--ink);font-weight:800}
+.pull{margin-top:26px;padding:20px 22px;border-radius:17px;background:rgba(255,255,255,.04);
+  border:1px solid var(--line);border-left:3px solid var(--yellow)}
+.pull blockquote{margin:0;font-family:'Unbounded',sans-serif;font-weight:600;letter-spacing:-.028em;
+  font-size:clamp(1.02rem,2.6vw,1.32rem);line-height:1.42;color:var(--white)}
+.pull cite{display:block;margin-top:13px;font-style:normal;font-size:.755rem;font-weight:800;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--faint)}
+
+/* ---------- gallery ---------- */
+.gal{display:grid;grid-template-columns:1fr;gap:13px;margin-top:38px}
+@media (min-width:560px){.gal{grid-template-columns:1fr 1fr}}
+@media (min-width:980px){.gal{grid-template-columns:repeat(3,1fr);gap:16px}}
+.shot{position:relative;min-width:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+  background:var(--char);box-shadow:var(--shadow)}
+.shot img{width:100%;aspect-ratio:4/5;object-fit:cover;
+  transition:transform .6s var(--ease)}
+.shot:hover img{transform:scale(1.045)}
+.shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 15px 14px;
+  font-size:.795rem;font-weight:700;color:var(--ink);line-height:1.4;
+  background:linear-gradient(180deg,rgba(10,10,12,0),rgba(10,10,12,.88) 62%)}
+
+/* ---------- reviews ---------- */
+.stat{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px}
+@media (min-width:640px){.stat{grid-template-columns:repeat(3,1fr)}}
+.stat-c{min-width:0;padding:22px;border-radius:18px;text-align:center;
+  background:linear-gradient(160deg,rgba(255,208,40,.09),rgba(255,255,255,.03));
+  border:1px solid rgba(255,208,40,.20)}
+.stat-c b{display:block;font-family:'Unbounded',sans-serif;font-weight:800;letter-spacing:-.04em;
+  font-size:clamp(1.9rem,6vw,2.5rem);line-height:1.05;color:var(--white)}
+.stat-c b .star{color:var(--yellow);font-size:.6em;vertical-align:.12em}
+.stat-c span{display:block;margin-top:8px;font-size:.68rem;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--muted)}
+.revs{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}
+@media (min-width:760px){.revs{grid-template-columns:1fr 1fr;gap:16px}}
+.rev{min-width:0;padding:24px 22px;border-radius:19px;background:var(--panel);
+  border:1px solid var(--line);box-shadow:var(--shadow);display:flex;flex-direction:column}
+.rev .stars{color:var(--yellow);font-size:.9rem;letter-spacing:.16em;margin-bottom:13px}
+.rev blockquote{margin:0;color:var(--ink);font-size:.965rem;line-height:1.68;flex:1 1 auto}
+.rev footer{margin-top:16px;padding-top:14px;border-top:1px solid var(--line-soft);
+  font-size:.755rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.rev-wide{grid-column:1/-1}
+
+/* ---------- hours / visit ---------- */
+.visit{display:grid;grid-template-columns:1fr;gap:16px;margin-top:38px}
+@media (min-width:900px){.visit{grid-template-columns:1.02fr .98fr;gap:22px}}
+.pan{min-width:0;padding:26px 22px;border-radius:20px;background:var(--panel);
+  border:1px solid var(--line);box-shadow:var(--shadow)}
+.pan h3{font-size:1.14rem;color:var(--white);letter-spacing:-.026em}
+.hours{margin-top:18px}
+.hours li{display:flex;justify-content:space-between;gap:14px;align-items:baseline;
+  padding-top:10px;padding-bottom:10px;border-bottom:1px solid var(--line-soft);font-size:.945rem}
+.hours li:last-child{border-bottom:0}
+.hours .d{color:var(--muted);font-weight:600;min-width:0}
+.hours .t{color:var(--ink);font-weight:800;text-align:right;min-width:0}
+.hours .closed{color:var(--faint);font-weight:700}
+.note{margin-top:16px;padding:13px 15px;border-radius:13px;background:rgba(255,208,40,.075);
+  border:1px solid rgba(255,208,40,.2);color:var(--ink);font-size:.885rem;line-height:1.55}
+.addr{margin-top:18px;display:grid;gap:14px}
+.arow{display:flex;gap:13px;align-items:flex-start;min-width:0}
+.arow svg{width:19px;height:19px;flex:0 0 auto;color:var(--yellow);margin-top:3px}
+.arow .k{display:block;font-size:.655rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.arow a,.arow p{font-size:1rem;font-weight:700;color:var(--ink);text-decoration:none;min-width:0}
+.arow a:hover{color:var(--yellow)}
+.pan-img{padding:0;overflow:hidden}
+.pan-img img{width:100%;height:100%;min-height:250px;object-fit:cover}
+
+/* ---------- final cta ---------- */
+.cta-box{position:relative;overflow:hidden;border-radius:24px;padding:44px 24px;text-align:center;
+  background:linear-gradient(160deg,rgba(255,208,40,.13),rgba(255,255,255,.035));
+  border:1px solid rgba(255,208,40,.24);box-shadow:0 30px 70px -30px rgba(0,0,0,.9)}
+@media (min-width:820px){.cta-box{padding:66px 44px}}
+.cta-box h2{margin-left:auto;margin-right:auto;max-width:17ch}
+.cta-box .lede{margin-left:auto;margin-right:auto}
+.cta-box .btns{justify-content:center}
+
+/* ---------- footer ---------- */
+.ftr{border-top:1px solid var(--line-soft);background:rgba(0,0,0,.4);
+  padding-top:44px;padding-bottom:44px}
+.ftr-in{display:grid;grid-template-columns:1fr;gap:26px}
+@media (min-width:760px){.ftr-in{grid-template-columns:1.3fr 1fr 1fr}}
+.ftr h4{font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--faint);font-family:'Mulish',sans-serif;margin-bottom:13px}
+.ftr p,.ftr a{color:var(--muted);font-size:.925rem;text-decoration:none}
+.ftr a:hover{color:var(--yellow)}
+.ftr li{padding-top:5px;padding-bottom:5px}
+.ftr .brand{margin-bottom:14px}
+.credit{margin-top:34px;padding-top:22px;border-top:1px solid var(--line-soft);
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;
+  font-size:.82rem;color:var(--faint)}
+.credit a{color:var(--muted);font-weight:700;text-decoration:none}
+.credit a:hover{color:var(--yellow)}
+
+/* ---------- reveals (js-gated) ---------- */
+.js .rv{opacity:0;transform:translateY(26px) scale(.975);filter:blur(7px);
+  transition:opacity .8s var(--ease),transform .8s var(--ease),filter .8s var(--ease)}
+.js .rv.in{opacity:1;transform:none;filter:none}
+.js .rv.d1{transition-delay:.1s}
+.js .rv.d2{transition-delay:.2s}
+.js .rv.d3{transition-delay:.3s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
+  .tick-row{animation:none!important}
+  .blob{animation:none!important}
+  .shot img,.card,.btn{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="page">
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top" aria-label="Smile Barbershop home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M6 13a10 10 0 0 0 20 0" stroke="#FFD028" stroke-width="4" stroke-linecap="round"/><circle cx="10.5" cy="8" r="2" fill="#FFD028"/><circle cx="21.5" cy="8" r="2" fill="#FFD028"/></svg>
+      </span>
+      <span class="brand-txt">
+        <span class="brand-name">Smile Barbershop</span>
+        <span class="brand-sub">Winter Haven, FL</span>
+      </span>
+    </a>
+    <nav class="hdr-nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">The Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="hdr-cta" href="tel:+18633032460" aria-label="Call Smile Barbershop at (863) 303-2460">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z" fill="currentColor"/></svg>
+      <span class="lbl">(863) 303-2460</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy rv">
+        <span class="eyebrow">Winter Haven &middot; US-92</span>
+        <h1 class="h1">Lined up right, <span class="grad">every time.</span></h1>
+        <p class="hero-sub">Fades, line-ups, tapers, beard work and family cuts at Smile Barbershop &mdash; a clean, easy shop on US-92 with regulars who have been sitting in the same chair for years.</p>
+        <div class="btns">
+          <a class="btn btn-p" href="tel:+18633032460">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z" fill="currentColor"/></svg>
+            Call (863) 303-2460
+          </a>
+          <a class="btn btn-g" href="#work">See the work</a>
+        </div>
+        <div class="chips">
+          <div class="chip"><b><span class="star">&#9733;</span> 4.9</b><span>Google rating</span></div>
+          <div class="chip"><b>37</b><span>Google reviews</span></div>
+          <div class="chip"><b>Tue&ndash;Sat</b><span>Open five days</span></div>
+        </div>
+      </div>
+      <div class="hero-art rv d1">
+        <div class="frame">
+          <img src="img/shop-neon.jpg" width="975" height="1300" alt="Barber chair under the neon Smile Barbershop sign inside the shop" fetchpriority="high">
+          <div class="art-tag">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
+            <span>3009 US-92, Suite 3 &middot; Winter Haven</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="tick-row">
+      <ul>
+        <li>Fades</li><li>Line-Ups</li><li>Tapers</li><li>Beard Trims</li><li>Family Cuts</li><li>Hair Designs</li>
+        <li>Fades</li><li>Line-Ups</li><li>Tapers</li><li>Beard Trims</li><li>Family Cuts</li><li>Hair Designs</li>
+      </ul>
+      <ul>
+        <li>Fades</li><li>Line-Ups</li><li>Tapers</li><li>Beard Trims</li><li>Family Cuts</li><li>Hair Designs</li>
+        <li>Fades</li><li>Line-Ups</li><li>Tapers</li><li>Beard Trims</li><li>Family Cuts</li><li>Hair Designs</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="sec" id="services">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">In the chair</span>
+        <h2>Cuts that hold their <span class="grad">shape</span>.</h2>
+        <p class="lede">Everything here is the standard barbershop menu done carefully &mdash; and the reviews keep coming back to the same word: detail.</p>
+      </div>
+      <div class="grid grid-4">
+        <article class="card rv">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20 20 4M4 4l6.5 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="6" cy="17" r="2.6" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="17" r="2.6" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          <h3>Fades &amp; tapers</h3>
+          <p>Low, mid or high &mdash; blended clean through the sides and back so the growth-out stays even instead of falling apart in a week.</p>
+        </article>
+        <article class="card rv d1">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8h18M3 13h12M3 18h7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+          <h3>Line-ups &amp; edge work</h3>
+          <p>The part people drive across town for. Hairline, temples and neck squared off sharp, with the same edge on a fresh cut or a touch-up between them.</p>
+        </article>
+        <article class="card rv d2">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3c3.4 0 6 2.6 6 6v3.5c0 3.6-2.7 6.5-6 6.5s-6-2.9-6-6.5V9c0-3.4 2.6-6 6-6Z" stroke="currentColor" stroke-width="1.8"/><path d="M9 10.5h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <h3>Beard trims &amp; blends</h3>
+          <p>Beard shaped and faded into the cut so the two read as one piece &mdash; cut and beard in the same visit is the most common request here.</p>
+        </article>
+        <article class="card rv d3">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="8.5" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/><circle cx="16.5" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M3 19c.6-3 2.8-4.6 5.5-4.6S13.4 16 14 19M15 19c.4-2.2 1.8-3.4 3.6-3.4S21.6 16.8 22 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <h3>Family &amp; kids&rsquo; cuts</h3>
+          <p>A family-oriented shop &mdash; the chairs see grandfathers, dads and first-graders on the same afternoon, and nobody rushes the little ones.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE: LINE-UP -->
+  <section class="sec band">
+    <div class="wrap split">
+      <div class="split-copy rv">
+        <span class="eyebrow">Why regulars stay</span>
+        <h2>The line-up is the <span class="grad">whole point</span>.</h2>
+        <p class="lede">Anyone can take length off. The difference shows up along the hairline &mdash; and it is the reason people here stop shopping around once they find the right chair.</p>
+        <div class="pts">
+          <div class="pt"><span class="pt-d" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5 10 17.5 19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><p><b>Years, not visits.</b> The loyalty in these reviews is measured in years with the same barber, not one lucky haircut.</p></div>
+          <div class="pt"><span class="pt-d" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5 10 17.5 19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><p><b>Told, then advised.</b> Reviewers describe a barber who listens to what you asked for first, then suggests what will actually suit you.</p></div>
+          <div class="pt"><span class="pt-d" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5 10 17.5 19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><p><b>The whole floor can cut.</b> Regulars ask for Alex by name, and they say the same thing about everybody else working the room.</p></div>
+        </div>
+        <div class="pull">
+          <blockquote>&ldquo;The only people who can line me up correctly, and get a smooth fade&rdquo;</blockquote>
+          <cite>J. S. &mdash; Google review</cite>
+        </div>
+      </div>
+      <div class="split-art rv d1">
+        <img src="img/barber-at-work.jpg" width="938" height="1250" alt="Barber checking the fade on a client's hairline at Smile Barbershop" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">The work</span>
+        <h2>Straight off the <span class="grad">shop floor</span>.</h2>
+        <p class="lede">Real cuts from real chairs at 3009 US-92 &mdash; no stock photos, no filters on the fade.</p>
+      </div>
+      <div class="gal">
+        <figure class="shot rv"><img src="img/curly-taper-fade.jpg" width="990" height="1250" alt="Curly taper fade with a blended beard, finished at Smile Barbershop" loading="lazy"><figcaption>Curly taper with a blended beard</figcaption></figure>
+        <figure class="shot rv d1"><img src="img/design-lineup.jpg" width="938" height="1250" alt="Back of a fresh fade with a carved design line under the neon shop sign" loading="lazy"><figcaption>Carved design line and a clean fade</figcaption></figure>
+        <figure class="shot rv d2"><img src="img/classic-cut.jpg" width="938" height="1250" alt="Side profile of a classic cut with a razor-sharp line-up" loading="lazy"><figcaption>Classic cut, razor-sharp line-up</figcaption></figure>
+        <figure class="shot rv"><img src="img/taper-shopfloor.jpg" width="1088" height="1250" alt="Curly taper photographed on the shop floor with barber chairs behind" loading="lazy"><figcaption>Taper, shot on the floor</figcaption></figure>
+        <figure class="shot rv d1"><img src="img/silver-blend.jpg" width="938" height="1250" alt="Silver hair blended and lined up, client in a Smile Barbershop cape" loading="lazy"><figcaption>Silver blended and squared off</figcaption></figure>
+        <figure class="shot rv d2"><img src="img/branded-cape.jpg" width="938" height="1250" alt="Client in the Smile Barbershop cape after a fresh cut and beard shape-up" loading="lazy"><figcaption>Cut and beard, one sitting</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMFORT -->
+  <section class="sec band">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">The room</span>
+        <h2>A shop you don&rsquo;t mind <span class="grad">waiting in</span>.</h2>
+        <p class="lede">Small things, mentioned over and over in the reviews. They are the reason people bring the whole family instead of squeezing in alone.</p>
+      </div>
+      <div class="grid grid-4">
+        <article class="card rv">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V9l8-5 8 5v11" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 20v-5h6v5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <h3>Clean and organized</h3>
+          <p>Cleanliness comes up in review after review &mdash; the floor, the stations and the bathroom included.</p>
+        </article>
+        <article class="card rv d1">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="3" width="14" height="18" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 7.5h7M8.5 11h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="15.5" cy="16" r="1.4" fill="currentColor"/></svg></span>
+          <h3>Snacks and drinks</h3>
+          <p>Vending machines on site, so a wait with a kid in tow does not turn into a run to the gas station.</p>
+        </article>
+        <article class="card rv d2">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 8a4.1 4.1 0 0 1 7 2.6C19 15.4 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <h3>Warm from the door</h3>
+          <p>Reviewers describe feeling welcomed the moment they walk in &mdash; friendly, unhurried, easy to talk to.</p>
+        </article>
+        <article class="card rv d3">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18V8.5A2.5 2.5 0 0 1 6.5 6h11A2.5 2.5 0 0 1 20 8.5V18" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M2.5 18h19M8 6V4.5M16 6V4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <h3>Parking at the door</h3>
+          <p>Suite 3 in the plaza on US-92, with the lot right out front &mdash; pull in, walk a few steps, sit down.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="sec" id="reviews">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">Google reviews</span>
+        <h2>What Winter Haven <span class="grad">says</span>.</h2>
+        <p class="lede">Word for word from the shop&rsquo;s Google reviews.</p>
+      </div>
+
+      <div class="stat rv">
+        <div class="stat-c"><b><span class="star">&#9733;</span>4.9</b><span>Average rating</span></div>
+        <div class="stat-c"><b>37</b><span>Reviews on Google</span></div>
+        <div class="stat-c"><b>US-92</b><span>Winter Haven, FL</span></div>
+      </div>
+
+      <div class="revs">
+        <article class="rev rv">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;Great atmosphere<br>The only people who can line me up correctly, and get a smooth fade<br>Been coming here for years<br>Alex is always my go to!!!<br>But all are more than capable!!&rdquo;</blockquote>
+          <footer>J. S.</footer>
+        </article>
+        <article class="rev rv d1">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;I came in for a haircut and what a great place. The costumer service was on point and the haircut came Out very good. I would definitely recommend this place. Family oriented, very clean, clean bathroom and they have vending machines if you want a snack or something to drink. Overall great place and the owner Alex very nice and professional.&rdquo;</blockquote>
+          <footer>Melo P.</footer>
+        </article>
+        <article class="rev rv d2">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;Great atmosphere and exceptional service! This barbershop truly stands out with its talented team of barbers who know how to deliver a sharp, stylish cut every time. I take my boyfriend here to get his haircut all the time!. The space itself is welcoming and clean. Highly recommend for anyone looking for top-notch service and expertise!&rdquo;</blockquote>
+          <footer>Tatiana S.</footer>
+        </article>
+        <article class="rev rv d3">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;Smile Barbershop is hands down the best place to get a fresh cut! From the moment you walk in, you&rsquo;re welcomed with a friendly atmosphere and top-notch service. Alexis and the team are true professionals who take their time to make sure every detail is perfect. I got a haircut and beard trim, and I couldn&rsquo;t be happier with the results. The precision, the fade, and the styling were all on point.&rdquo;</blockquote>
+          <footer>Julian Z.</footer>
+        </article>
+        <article class="rev rev-wide rv">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;If you&rsquo;re looking for a place where quality service and attention to detail come together perfectly, look no further than Smile Barbershop. From the moment you walk in, you feel welcomed thanks to a warm and friendly atmosphere. The true star of this place is Alexi, the best barber you can find. His skill with scissors and clippers is exceptional. He not only listens to what you want but also offers recommendations based on his experience, ensuring you leave with a look that highlights your best features. Additionally, the cleanliness and organization of the shop are impeccable, making every visit enjoyable.&rdquo;</blockquote>
+          <footer>Davila&rsquo;s Remodeling</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="sec band" id="visit">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">Find the shop</span>
+        <h2>Suite 3, right on <span class="grad">US-92</span>.</h2>
+        <p class="lede">Look for the striped pole and the smile on the glass &mdash; Suite 3 in the brick plaza, with the lot right out front.</p>
+      </div>
+      <div class="visit">
+        <div class="pan rv">
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li><span class="d">Monday</span><span class="t closed">Closed</span></li>
+            <li><span class="d">Tuesday</span><span class="t">9:00 AM &ndash; 6:00 PM</span></li>
+            <li><span class="d">Wednesday</span><span class="t">9:00 AM &ndash; 6:00 PM</span></li>
+            <li><span class="d">Thursday</span><span class="t">9:00 AM &ndash; 6:00 PM</span></li>
+            <li><span class="d">Friday</span><span class="t">9:00 AM &ndash; 6:00 PM</span></li>
+            <li><span class="d">Saturday</span><span class="t">8:00 AM &ndash; 5:00 PM</span></li>
+            <li><span class="d">Sunday</span><span class="t closed">Closed</span></li>
+          </ul>
+          <p class="note">Hours as listed on Google. Barbers book up and Saturdays fill fast &mdash; give the shop a quick call before you make the drive.</p>
+          <div class="addr">
+            <div class="arow">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
+              <span><span class="k">Address</span><a href="https://maps.google.com/?cid=14454441382139136216" target="_blank" rel="noopener">3009 US-92, Suite 3<br>Winter Haven, FL 33881</a></span>
+            </div>
+            <div class="arow">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z" fill="currentColor"/></svg>
+              <span><span class="k">Phone</span><a href="tel:+18633032460">(863) 303-2460</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="pan pan-img rv d1">
+          <img src="img/storefront.jpg" width="1600" height="900" alt="Smile Barbershop storefront, Suite 3, on US-92 in Winter Haven, Florida" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="cta-box rv">
+        <span class="eyebrow">Book a chair</span>
+        <h2>Come get lined up.</h2>
+        <p class="lede">Call the shop, tell them what you want, and take the next open chair.</p>
+        <div class="btns">
+          <a class="btn btn-p" href="tel:+18633032460">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z" fill="currentColor"/></svg>
+            Call (863) 303-2460
+          </a>
+          <a class="btn btn-g" href="https://maps.google.com/?cid=14454441382139136216" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-in">
+      <div>
+        <a class="brand" href="#top">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M6 13a10 10 0 0 0 20 0" stroke="#FFD028" stroke-width="4" stroke-linecap="round"/><circle cx="10.5" cy="8" r="2" fill="#FFD028"/><circle cx="21.5" cy="8" r="2" fill="#FFD028"/></svg>
+          </span>
+          <span class="brand-txt">
+            <span class="brand-name">Smile Barbershop</span>
+            <span class="brand-sub">Winter Haven, FL</span>
+          </span>
+        </a>
+        <p>Fades, line-ups, tapers, beard work and family cuts on US-92 in Winter Haven, Florida.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="https://maps.google.com/?cid=14454441382139136216" target="_blank" rel="noopener">3009 US-92, Suite 3<br>Winter Haven, FL 33881</a></li>
+          <li><a href="tel:+18633032460">(863) 303-2460</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Tue &ndash; Fri &nbsp;9:00 AM &ndash; 6:00 PM</li>
+          <li>Saturday &nbsp;8:00 AM &ndash; 5:00 PM</li>
+          <li>Sunday &amp; Monday &nbsp;Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="credit">
+      <span>&copy; <span id="yr">2026</span> Smile Barbershop</span>
+      <span>Website by <a href="https://wilsoninnovations.net" target="_blank" rel="noopener">Wilson Innovations</a></span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BarberShop",
+  "name":"Smile Barbershop",
+  "url":"https://wilsoninnovations.net/smile-barbershop/",
+  "image":"https://wilsoninnovations.net/smile-barbershop/img/storefront.jpg",
+  "telephone":"+1-863-303-2460",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"3009 US-92, Suite 3",
+    "addressLocality":"Winter Haven",
+    "addressRegion":"FL",
+    "postalCode":"33881",
+    "addressCountry":"US"
+  },
+  "hasMap":"https://maps.google.com/?cid=14454441382139136216",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"37"},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"17:00"}
+  ],
+  "areaServed":[{"@type":"City","name":"Winter Haven"},{"@type":"City","name":"Auburndale"},{"@type":"City","name":"Lakeland"}]
+}
+</script>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  d.classList.add('js');
+  var y=document.getElementById('yr'); if(y){y.textContent=new Date().getFullYear();}
+  var els=[].slice.call(document.querySelectorAll('.rv'));
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+    });
+  },{threshold:0,rootMargin:'0px 0px 12% 0px'});
+  els.forEach(function(e){io.observe(e);});
+  // momentum-scroll safety sweep
+  function sweep(){
+    var h=window.innerHeight;
+    els.forEach(function(e){
+      if(e.classList.contains('in'))return;
+      var r=e.getBoundingClientRect();
+      if(r.top<h*0.96&&r.bottom>0){e.classList.add('in');io.unobserve(e);}
+    });
+  }
+  window.addEventListener('load',sweep);
+  window.addEventListener('scroll',function(){window.requestAnimationFrame(sweep);},{passive:true});
+  setTimeout(sweep,420);
+})();
+</script>
+
+</body>
+</html>
